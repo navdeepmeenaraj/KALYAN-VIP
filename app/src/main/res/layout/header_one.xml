@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headerOneRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/home_call_now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:drawableStart="@drawable/kvip_ic_baseline_add_ic_call_24"
+                android:drawableTint="@color/white"
+                android:paddingStart="8dp"
+                android:text="Whatsapp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:cornerRadius="99dp"
+                app:icon="@drawable/kvip_ic_whtsp"
+                app:iconTint="@null" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/home_whatsapp_now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:drawableStart="@drawable/kvip_ic_whtsp"
+                android:paddingStart="8dp"
+                android:text="Whatsapp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:cornerRadius="99dp"
+                app:icon="@drawable/kvip_ic_whtsp"
+                app:iconTint="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wallet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addPoints"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:drawableStart="@drawable/kvip_ic_baseline_add_to_photos_24"
+                android:drawableTint="@color/white"
+                android:paddingStart="14sp"
+                android:text="Add Points"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/getPoints"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:drawableStart="@drawable/kvip_ic_baseline_save_alt_24"
+                android:drawableTint="@color/white"
+                android:paddingStart="14sp"
+                android:text="Withdraw"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherGamesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_starline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:drawableStart="@drawable/kvip_ic_baseline_stars_24"
+                android:drawableTint="@color/white"
+                android:paddingStart="14sp"
+                android:text="StarLine"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_gali"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:drawableStart="@drawable/kvip_ic_baseline_gamepad_24"
+                android:drawableTint="@color/white"
+                android:paddingStart="13dp"
+                android:text="Gali-Disawar"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/telegram"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorGreen"
+                android:fontFamily="@font/reg"
+                android:text="Add Points"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:icon="@drawable/kvip_ic_walet"
+                app:iconPadding="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

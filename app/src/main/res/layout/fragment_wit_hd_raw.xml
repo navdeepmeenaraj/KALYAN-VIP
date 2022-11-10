@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/withdraw_funds_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".ui.main.fragments.WWFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/withdraw_funds_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorGreen"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white_dark" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:text="Withdraw Points"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/withdraw_funds_points"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/kvip__n_edit_background"
+            android:hint="Enter Points to withdraw"
+            android:inputType="number"
+            android:maxLength="5"
+            android:padding="14dp" />
+
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/payment_app_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:gravity="start"
+            android:hint="Select Withdraw Method"
+            android:padding="12dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_arrow_tint="@color/black"
+            app:spinner_divider_color="@color/black"
+            app:spinner_divider_show="true"
+            app:spinner_divider_size="0.4dp"
+            app:spinner_popup_animation="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/medium"
+            android:text="Enter Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/input_label_size"
+            android:visibility="gone" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/withdraw_funds_payment_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:inputType="number"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/walletButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/black"
+                android:text="Add Methods"
+                android:textColor="@color/white" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/withdraw_funds_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/colorGreen"
+                android:text="Submit Request"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/withdraw_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Withdraw History"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</FrameLayout>

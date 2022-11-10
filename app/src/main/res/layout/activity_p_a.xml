@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="visible"
+    tools:context=".Upi">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/kvip__n_divider_empty"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:showDividers="middle">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/points_to_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit_points"
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add Fund"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</FrameLayout>

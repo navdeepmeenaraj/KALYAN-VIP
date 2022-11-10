@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: xyz.peridy.shimmer:shimmerlayout:1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5437d750c131ba25f24feda15cb406dc/jetified-shimmerlayout-1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5437d750c131ba25f24feda15cb406dc/jetified-shimmerlayout-1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5437d750c131ba25f24feda15cb406dc/jetified-shimmerlayout-1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/xyz.peridy.shimmer/shimmerlayout/1.1/81b94b63ef23c48fbaa14deef2153efdf64f66e9/shimmerlayout-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
